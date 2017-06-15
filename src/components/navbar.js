@@ -8,7 +8,8 @@ export default class Navbar extends Component {
                 <label for="mainNavButton" onclick>Menu</label>
                 <ul>
                     <li className="nav-filler">
-                        <span className="icon">FightFit</span>
+                        <img src="../images/favicon.png" className="icon" />
+                        {/*<span className="icon">FightFit</span>*/}
                     </li>
                     <li><a href="#fightfit">FightFit</a></li>
                     <li><a href="#trainers">Instruktörer</a></li>

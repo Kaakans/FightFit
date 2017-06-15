@@ -450,11 +450,11 @@ select:focus {
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #d32f2f;
+  border-bottom: 1px solid #e4202a;
 }
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 2px solid #d32f2f;
+  border-bottom: 2px solid #e4202a;
 }
 .tabs [class^="tab"] [type="radio"]:checked + div,
 .tabs [class*=" tab"] [type="radio"]:checked + div {
@@ -526,7 +526,7 @@ select:focus {
   color: #000000;
 }
 .secondary {
-  background-color: #d32f2f;
+  background-color: #e4202a;
   color: #ffffff;
 }
 .secondary-light {
@@ -538,7 +538,7 @@ select:focus {
   color: #ffffff;
 }
 .secondary-text {
-  color: #d32f2f;
+  color: #e4202a;
 }
 .secondary-light-text {
   color: #ff6659;
@@ -603,7 +603,7 @@ p {
   line-height: 0.8em;
   margin-top: 0;
   margin-bottom: 30px;
-  color: #d32f2f;
+  color: #e4202a;
 }
 .sub-title {
   display: block;
