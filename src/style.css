@@ -1,0 +1,602 @@
+/** Variables **/
+/***************/
+/* needed for checkbox hack */
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+#nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin-bottom: 20px;
+}
+#nav ul {
+  display: none;
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#nav ul li a {
+  display: block;
+  padding: 1em;
+  color: #ccc;
+  text-decoration: none;
+}
+#nav ul li a:hover {
+  color: #eee;
+  font-weight: 500;
+}
+#nav ul li ul li a {
+  padding-left: 1.5em;
+}
+#nav ul li ul li ul li a {
+  padding-left: 3.125em;
+}
+#nav ul li:last-of-type a {
+  border-right: 0px;
+}
+#nav ul li.nav-filler {
+  flex: 4;
+}
+#nav input.trigger {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+#nav input.trigger:checked ~ ul,
+#nav input.trigger:checked ~ ul li ul {
+  display: block !important;
+}
+#nav label {
+  position: relative;
+  display: block;
+  min-height: 2em;
+  padding: .45em;
+  font-size: 1.1em;
+  margin: 0;
+  cursor: pointer;
+  background: #bdbdbd;
+  line-height: 2em;
+  color: #000000;
+}
+#nav label:after {
+  position: absolute;
+  right: 1em;
+  top: .2em;
+  content: "\2261";
+  font-size: 1.8em;
+  color: #000000;
+}
+@media (min-width: 50em) {
+  #nav {
+    margin-bottom: 50px;
+  }
+  #nav .icon {
+    color: #9a0007;
+    display: inline-block;
+    margin: auto auto;
+    font-weight: 700;
+  }
+  #nav ul {
+    /* older flexbox */
+    display: -ms-flexbox;
+    flex-direction: -ms-row;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    /* newer flexbox */
+    display: flex;
+    flex-direction: row;
+  }
+  #nav ul li.nav-filler {
+    display: inherit;
+    position: relative;
+    /* older flexbox */
+    -ms-flex: 10;
+    -webkit-box-flex: 10;
+    -moz-box-flex: 10;
+    box-flex: 10;
+    /* newer flexbox */
+    flex: 10;
+    text-align: center;
+  }
+  #nav ul li.nav-filler-2 {
+    display: inherit;
+    position: relative;
+    /* older flexbox */
+    -ms-flex: 4;
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    box-flex: 4;
+    /* newer flexbox */
+    flex: 4;
+  }
+  #nav ul li {
+    position: relative;
+    text-align: center;
+    /* older flexbox */
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    /* newer flexbox */
+    flex: 1;
+  }
+  #nav ul li a {
+    display: block;
+    padding: 1em;
+    color: #ccc;
+    text-decoration: none;
+  }
+  #nav ul li ul {
+    display: none !important;
+    position: absolute;
+    top: 3.0625em;
+    left: 0;
+    display: block;
+    width: 12.5em;
+    z-index: 200;
+  }
+  #nav ul li ul li {
+    text-align: left;
+  }
+  #nav ul li ul li ul {
+    z-index: 300;
+    top: 0px;
+    left: 12.4em;
+  }
+  #nav ul li ul li ul li a {
+    padding-left: 30px !important;
+  }
+  #nav ul li:hover > ul {
+    display: block !important;
+  }
+  #nav input.trigger:checked ~ ul li ul {
+    /* older flexbox */
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    /* newer flexbox */
+    display: flex;
+    flex-direction: row;
+  }
+  #nav label {
+    display: none;
+  }
+}
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
+}
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top: 10px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
+}
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+#parallax-world-of-ugg h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: .8;
+}
+#parallax-world-of-ugg h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #000000;
+}
+#parallax-world-of-ugg p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.70;
+}
+#parallax-world-of-ugg .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-four {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-five {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-six {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .line-break {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 420px;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+}
+.tab-container {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
+  margin: 0 auto;
+  padding: 50px;
+  width: 70%;
+}
+.tab-title {
+  font-size: 40px;
+  line-height: 0.8em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.tabs {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden;
+}
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1em;
+  padding: 2rem 0;
+  text-align: center;
+}
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+  border-bottom: 1px solid rgba(140, 140, 140, 0.5);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.tabs [class^="tab"] [type="radio"] + div,
+.tabs [class*=" tab"] [type="radio"] + div {
+  display: block;
+  opacity: 0;
+  padding: 2rem 0;
+  width: 90%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.tabs [class^="tab"] [type="radio"]:hover,
+.tabs [class*=" tab"] [type="radio"]:hover,
+.tabs [class^="tab"] [type="radio"]:focus,
+.tabs [class*=" tab"] [type="radio"]:focus {
+  border-bottom: 1px solid #d32f2f;
+}
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
+  border-bottom: 2px solid #d32f2f;
+}
+.tabs [class^="tab"] [type="radio"]:checked + div,
+.tabs [class*=" tab"] [type="radio"]:checked + div {
+  opacity: 1;
+}
+.tabs .tab-2 {
+  width: 50%;
+}
+.tabs .tab-2 [type="radio"] + div {
+  width: 200%;
+  margin-left: 200%;
+}
+.tabs .tab-2 [type="radio"]:checked + div {
+  margin-left: 0;
+}
+.tabs .tab-2:last-child [type="radio"] + div {
+  margin-left: 100%;
+}
+.tabs .tab-2:last-child [type="radio"]:checked + div {
+  margin-left: -100%;
+}
+.tabs .tab-3 {
+  width: 33%;
+}
+.tabs .tab-3 [type="radio"] + div {
+  width: 300%;
+  margin-left: 300%;
+}
+.tabs .tab-3 [type="radio"]:checked + div {
+  margin-left: 0;
+}
+.tabs .tab-3:nth-child(2) [type="radio"] + div {
+  margin-left: 100%;
+}
+.tabs .tab-3:nth-child(2) [type="radio"]:checked + div {
+  margin-left: -100%;
+}
+.tabs .tab-3:last-child [type="radio"] + div {
+  margin-left: 200%;
+}
+.tabs .tab-3:last-child [type="radio"]:checked + div {
+  margin-left: -200%;
+}
+.tabs p {
+  color: #000000;
+}
+/** Colors **/
+/************/
+.primary {
+  background-color: #bdbdbd;
+  color: #000000;
+}
+.faded {
+  background-color: #bdbdbd;
+}
+.primary-light {
+  background-color: #eeeeee;
+  color: #000000;
+}
+.primary-dark {
+  background-color: #8c8c8c;
+  color: #000000;
+}
+.secondary {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+.secondary-light {
+  background-color: #ff6659;
+  color: #ffffff;
+}
+.secondary-dark {
+  background-color: #ff6659;
+  color: #ffffff;
+}
+.secondary-text {
+  color: #d32f2f;
+}
+.secondary-light-text {
+  color: #ff6659;
+}
+.secondary-dark-text {
+  color: #9a0007;
+}
+/** Helpers **/
+/*************/
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-50,
+div.mt-50 {
+  margin-top: 50px;
+}
+.mb-50,
+div.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.inline-block {
+  display: inline-block;
+}
+/** Body **/
+/**********/
+body {
+  margin: 0;
+  animation: bugfix infinite 1s;
+}
+.rounded {
+  border-radius: 15px;
+}
+.profile-picture {
+  float: left;
+  margin-right: 20px;
+  width: 160px;
+  height: 210px;
+}
+.fit-screen-image {
+  height: 100vh;
+}
+#fightfit {
+  padding: 30px 30px;
+}
+@media (min-width: 50em) {
+  .fit-screen-image {
+    width: 100%;
+  }
+  #fightfit {
+    margin: 0 auto;
+    width: 70%;
+  }
+}

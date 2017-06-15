@@ -1,0 +1,128 @@
+@import "colors";
+
+/** Colors **/
+/************/
+
+
+.primary {
+    background-color: @primary;
+    color: @primary-text-color;
+}
+
+.faded {
+    background-color: rgb(189, 189, 189, 0.95);
+}
+
+.primary-light {
+    background-color: @primary-light;
+    color: @primary-text-color;
+}
+
+.primary-dark {
+    background-color: @primary-dark;
+    color: @primary-text-color;
+}
+
+.secondary {
+    background-color: @secondary;
+    color: @secondary-text-color;
+}
+
+.secondary-light {
+    background-color: @secondary-light;
+    color: @secondary-text-color;
+}
+
+.secondary-dark {
+    background-color: @secondary-light;
+    color: @secondary-text-color;
+}
+
+.secondary-text {
+    color: @secondary;
+}
+
+.secondary-light-text {
+    color: @secondary-light;
+}
+
+.secondary-dark-text {
+    color: @secondary-dark;
+}
+
+
+
+/** Helpers **/
+/*************/
+
+.mt-15 {
+    margin-top: 15px;
+} 
+
+.mt-50,
+div.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50,
+div.mb-50 {
+    margin-bottom: 50px;
+} 
+
+.mb-15 {
+    margin-bottom: 15px;
+} 
+
+
+.ml-10 {
+    margin-left: 10px;
+} 
+
+
+.mr-10 {
+    margin-right: 10px;
+} 
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/** Body **/
+/**********/
+
+body {
+	margin: 0;
+	// background-image: url("../images/asa-rodger-88529.jpg");
+    animation: bugfix infinite 1s;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.profile-picture {
+    float: left;
+    margin-right: 20px;
+    width: 160px;
+    height: 210px;  
+}
+
+.fit-screen-image {
+  height: 100vh;
+}
+
+#fightfit {
+    padding: 30px 30px;
+}
+
+@media (min-width: 50em) {
+    .fit-screen-image {
+        width: 100%;
+    }
+
+    #fightfit {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
