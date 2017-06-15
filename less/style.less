@@ -57,7 +57,11 @@
 
 .mt-15 {
     margin-top: 15px;
-} 
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
 
 .mt-50,
 div.mt-50 {
@@ -92,37 +96,94 @@ div.mb-50 {
 /**********/
 
 body {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
 	margin: 0;
 	// background-image: url("../images/asa-rodger-88529.jpg");
     animation: bugfix infinite 1s;
 }
 
-.rounded {
-    border-radius: 15px;
-}
-
-.profile-picture {
-    float: left;
-    margin-right: 20px;
-    width: 160px;
-    height: 210px;  
+p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .fit-screen-image {
   height: 100vh;
 }
 
-#fightfit {
+#fightfit, #trainers, #sessions, 
+#gym, #about, #contact {
     padding: 30px 30px;
 }
+
+.secondary-title {
+    font-size: 40px;
+	line-height: 0.8em;
+	margin-top: 0;
+	margin-bottom: 30px;
+    color: @secondary;
+}
+
+.sub-title {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: 0.02em;
+    padding: 1.5rem 0;
+}
+
+// #sessions {
+//     /* older flexbox */
+//     display: -ms-flexbox;
+//     flex-direction: -ms-row;
+//     display: -webkit-box;
+//     display: -moz-box;
+//     display: box;
+//     -webkit-box-orient: horizontal;
+//     -moz-box-orient: horizontal;
+//     box-orient: horizontal;
+//     /* newer flexbox */
+//     display: flex;
+//     flex-direction: row;
+
+//     .session {
+//         flex: 
+//     }
+// }
 
 @media (min-width: 50em) {
     .fit-screen-image {
         width: 100%;
     }
 
-    #fightfit {
+    #fightfit, #trainers, #sessions, 
+    #gym, #about, #contact,
+    .tiny-info-container {
         margin: 0 auto;
         width: 70%;
+    }
+
+    .tiny-info-container {
+        position: relative;
+        content: "";
+        display: table;
+        clear: both;
+
+        #about, #contact {
+            display: inline-block;
+            width: 40%;
+            padding: 30px 0;
+        }
+
+        #about {
+            float: left;
+        }
+
+        #contact {
+            float: right;
+        }
     }
 }

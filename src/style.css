@@ -387,12 +387,10 @@
 }
 .tab-container {
   font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
   line-height: 1.6em;
   margin: 0 auto;
-  padding: 50px;
-  width: 70%;
+  padding: 0 30px;
+  box-shadow: 0px 5px 15px #eee;
 }
 .tab-title {
   font-size: 40px;
@@ -421,10 +419,6 @@ select:focus {
 .tabs [class*=" tab"] label {
   cursor: pointer;
   display: block;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1em;
-  padding: 2rem 0;
   text-align: center;
 }
 .tabs [class^="tab"] [type="radio"],
@@ -504,8 +498,15 @@ select:focus {
 .tabs .tab-3:last-child [type="radio"]:checked + div {
   margin-left: -200%;
 }
-.tabs p {
-  color: #000000;
+.tabs .rounded {
+  border-radius: 15px;
+}
+.tabs .profile-picture {
+  float: left;
+  margin-right: 20px;
+  width: 160px;
+  height: 210px;
+  border-radius: 5px;
 }
 /** Colors **/
 /************/
@@ -550,6 +551,9 @@ select:focus {
 .mt-15 {
   margin-top: 15px;
 }
+.mt-30 {
+  margin-top: 30px;
+}
 .mt-50,
 div.mt-50 {
   margin-top: 50px;
@@ -573,30 +577,72 @@ div.mb-50 {
 /** Body **/
 /**********/
 body {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   margin: 0;
   animation: bugfix infinite 1s;
 }
-.rounded {
-  border-radius: 15px;
-}
-.profile-picture {
-  float: left;
-  margin-right: 20px;
-  width: 160px;
-  height: 210px;
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 .fit-screen-image {
   height: 100vh;
 }
-#fightfit {
+#fightfit,
+#trainers,
+#sessions,
+#gym,
+#about,
+#contact {
   padding: 30px 30px;
+}
+.secondary-title {
+  font-size: 40px;
+  line-height: 0.8em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #d32f2f;
+}
+.sub-title {
+  display: block;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.02em;
+  padding: 1.5rem 0;
 }
 @media (min-width: 50em) {
   .fit-screen-image {
     width: 100%;
   }
-  #fightfit {
+  #fightfit,
+  #trainers,
+  #sessions,
+  #gym,
+  #about,
+  #contact,
+  .tiny-info-container {
     margin: 0 auto;
     width: 70%;
+  }
+  .tiny-info-container {
+    position: relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tiny-info-container #about,
+  .tiny-info-container #contact {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 0;
+  }
+  .tiny-info-container #about {
+    float: left;
+  }
+  .tiny-info-container #contact {
+    float: right;
   }
 }
