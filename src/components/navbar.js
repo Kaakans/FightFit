@@ -11,7 +11,6 @@ export default class Navbar extends Component {
                 <ul>
                     <li className="nav-filler">
                         <img src="../images/favicon.png" className="icon" />
-                        {/*<span className="icon">FightFit</span>*/}
                     </li>
                     <li><a href="#fightfit">FightFit</a></li>
                     <li><a href="#trainers">Instruktörer</a></li>

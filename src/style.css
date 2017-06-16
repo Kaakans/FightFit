@@ -66,10 +66,13 @@
   line-height: 2em;
   color: #000000;
 }
+#nav label .icon {
+  height: 2em;
+}
 #nav label:after {
   position: absolute;
   right: 1em;
-  top: .2em;
+  top: 0.2em;
   content: "\2261";
   font-size: 1.8em;
   color: #000000;
@@ -79,7 +82,6 @@
     margin-bottom: 50px;
   }
   #nav .icon {
-    color: #9a0007;
     display: inline-block;
     margin: auto auto;
     font-weight: 700;
@@ -97,6 +99,7 @@
     /* newer flexbox */
     display: flex;
     flex-direction: row;
+    white-space: nowrap;
   }
   #nav ul li.nav-filler {
     display: inherit;
@@ -626,12 +629,12 @@ p {
   box-orient: horizontal;
   /* newer flexbox */
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
 }
 .flex-container .session {
-  flex: 1;
+  flex-grow: 1;
+  flex-basis: 170px;
+  max-width: 170px;
   display: inline-block;
   margin: 5px 5px;
 }
