@@ -30,7 +30,9 @@ export default class Sessions extends Component {
 	render() {
 		return <div id="sessions">
             <h1 className="secondary-title">Pass</h1>
-            {this.renderSchedules()}
+            <div className="flex-container">
+                {this.renderSchedules()}
+            </div>
         </div>;
 }
 

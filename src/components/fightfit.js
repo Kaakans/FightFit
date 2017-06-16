@@ -5,7 +5,7 @@ export default class Fightfit extends Component {
         return (
             <div id="fightfit">
                 <h1 className="secondary-title">FightFit</h1>
-                <p className="mt-30">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut risus accumsan, pretium justo in, blandit diam. Donec porta enim at sapien euismod pretium. In fermentum, ante non pharetra hendrerit, massa sapien fermentum neque, sit amet efficitur dui magna eget sapien. Nam eget finibus tortor, et ornare orci. Quisque ut fermentum nunc. Pellentesque tristique lectus sed fringilla convallis. Nullam porta orci blandit, cursus erat et, rhoncus lectus. Phasellus sit amet massa tincidunt, tincidunt dolor a, aliquet felis. Mauris nec leo erat. Vivamus fermentum diam a metus pellentesque, vitae interdum justo tempus. Vivamus quis metus in nisi aliquam condimentum. Aenean congue nulla ornare nisi aliquam, sed aliquet risus aliquet. Suspendisse bibendum arcu eget condimentum ultrices. Donec ante massa, tempus at fringilla et, mattis ac arcu. Morbi faucibus luctus augue, sed imperdiet lectus finibus a.
                 </p>
                 <p>
