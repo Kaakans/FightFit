@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -560,9 +560,33 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _preact = __webpack_require__(0);
 
-var _hello = __webpack_require__(2);
+var _navbar = __webpack_require__(7);
 
-var _hello2 = _interopRequireDefault(_hello);
+var _navbar2 = _interopRequireDefault(_navbar);
+
+var _fightfit = __webpack_require__(5);
+
+var _fightfit2 = _interopRequireDefault(_fightfit);
+
+var _trainers = __webpack_require__(9);
+
+var _trainers2 = _interopRequireDefault(_trainers);
+
+var _sessions = __webpack_require__(8);
+
+var _sessions2 = _interopRequireDefault(_sessions);
+
+var _gym = __webpack_require__(6);
+
+var _gym2 = _interopRequireDefault(_gym);
+
+var _about = __webpack_require__(3);
+
+var _about2 = _interopRequireDefault(_about);
+
+var _contact = __webpack_require__(4);
+
+var _contact2 = _interopRequireDefault(_contact);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -586,13 +610,19 @@ var App = function (_Component) {
 		value: function render() {
 			return (0, _preact.h)(
 				'div',
-				{ 'class': 'app' },
+				{ className: 'app' },
+				(0, _preact.h)(_navbar2.default, null),
+				(0, _preact.h)('img', { src: 'src/images/boxing.jpg', 'class': 'fit-screen-image' }),
+				(0, _preact.h)(_fightfit2.default, null),
+				(0, _preact.h)(_trainers2.default, null),
+				(0, _preact.h)(_sessions2.default, null),
+				(0, _preact.h)(_gym2.default, null),
 				(0, _preact.h)(
-					'h1',
-					null,
-					'Hello!'
-				),
-				(0, _preact.h)(_hello2.default, null)
+					'div',
+					{ className: 'tiny-info-container' },
+					(0, _preact.h)(_about2.default, null),
+					(0, _preact.h)(_contact2.default, null)
+				)
 			);
 		}
 	}]);
@@ -604,27 +634,6 @@ exports.default = App;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _preact = __webpack_require__(0);
-
-exports.default = function () {
-	return (0, _preact.h)(
-		"p",
-		{ "class": "hello" },
-		"Hello, cruel world!"
-	);
-};
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -656,7 +665,689 @@ function init() {
 init();
 
 // If this is webpack-dev-server, set up HMR :)
-if (false) module.hot.accept('./components/app', init);
+if (false) module.hot.accept('./src/components/app', init);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_Component) {
+	_inherits(About, _Component);
+
+	function About() {
+		_classCallCheck(this, About);
+
+		return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	}
+
+	_createClass(About, [{
+		key: "render",
+		value: function render() {
+			return (0, _preact.h)(
+				"div",
+				{ id: "about" },
+				(0, _preact.h)(
+					"h1",
+					{ className: "secondary-title" },
+					"Om oss"
+				),
+				(0, _preact.h)(
+					"p",
+					null,
+					"Individanpassad cirkeltr\xE4ning f\xF6r hela familjen! Vi finns i Wir\xE9ns \xE5keris lokal bredvid bilpoolen. All tr\xE4ning sker p\xE5 egen risk. V\xE4lkomna!"
+				)
+			);
+		}
+	}]);
+
+	return About;
+}(_preact.Component);
+
+exports.default = About;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_Component) {
+    _inherits(Contact, _Component);
+
+    function Contact() {
+        _classCallCheck(this, Contact);
+
+        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+    }
+
+    _createClass(Contact, [{
+        key: "render",
+        value: function render() {
+            return (0, _preact.h)(
+                "div",
+                { id: "contact" },
+                (0, _preact.h)(
+                    "h1",
+                    { className: "secondary-title" },
+                    "Kontakt"
+                ),
+                (0, _preact.h)(
+                    "table",
+                    null,
+                    (0, _preact.h)(
+                        "thead",
+                        null,
+                        (0, _preact.h)(
+                            "tr",
+                            null,
+                            (0, _preact.h)("th", { width: "40" }),
+                            (0, _preact.h)("th", null)
+                        )
+                    ),
+                    (0, _preact.h)(
+                        "tbody",
+                        null,
+                        (0, _preact.h)(
+                            "tr",
+                            null,
+                            (0, _preact.h)(
+                                "td",
+                                null,
+                                (0, _preact.h)("i", { className: "fa fa-facebook-official" })
+                            ),
+                            (0, _preact.h)(
+                                "td",
+                                null,
+                                (0, _preact.h)(
+                                    "a",
+                                    { href: "http://facebook.com/fightfitkristinehamn" },
+                                    "FightFit p\xE5 facebook"
+                                )
+                            )
+                        ),
+                        (0, _preact.h)(
+                            "tr",
+                            null,
+                            (0, _preact.h)(
+                                "td",
+                                null,
+                                (0, _preact.h)("i", { className: "fa fa-phone" })
+                            ),
+                            (0, _preact.h)(
+                                "td",
+                                null,
+                                "076-046 69 94"
+                            )
+                        ),
+                        (0, _preact.h)(
+                            "tr",
+                            null,
+                            (0, _preact.h)(
+                                "td",
+                                null,
+                                (0, _preact.h)("i", { className: "fa fa-map-marker" })
+                            ),
+                            (0, _preact.h)(
+                                "td",
+                                null,
+                                "Tredje Industrigatan 2, Kristinehamn"
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_preact.Component);
+
+exports.default = Contact;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Fightfit = function (_Component) {
+    _inherits(Fightfit, _Component);
+
+    function Fightfit() {
+        _classCallCheck(this, Fightfit);
+
+        return _possibleConstructorReturn(this, (Fightfit.__proto__ || Object.getPrototypeOf(Fightfit)).apply(this, arguments));
+    }
+
+    _createClass(Fightfit, [{
+        key: "render",
+        value: function render() {
+            return (0, _preact.h)(
+                "div",
+                { id: "fightfit" },
+                (0, _preact.h)(
+                    "h1",
+                    { className: "secondary-title" },
+                    "FightFit"
+                ),
+                (0, _preact.h)(
+                    "p",
+                    null,
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut risus accumsan, pretium justo in, blandit diam. Donec porta enim at sapien euismod pretium. In fermentum, ante non pharetra hendrerit, massa sapien fermentum neque, sit amet efficitur dui magna eget sapien. Nam eget finibus tortor, et ornare orci. Quisque ut fermentum nunc. Pellentesque tristique lectus sed fringilla convallis. Nullam porta orci blandit, cursus erat et, rhoncus lectus. Phasellus sit amet massa tincidunt, tincidunt dolor a, aliquet felis. Mauris nec leo erat. Vivamus fermentum diam a metus pellentesque, vitae interdum justo tempus. Vivamus quis metus in nisi aliquam condimentum. Aenean congue nulla ornare nisi aliquam, sed aliquet risus aliquet. Suspendisse bibendum arcu eget condimentum ultrices. Donec ante massa, tempus at fringilla et, mattis ac arcu. Morbi faucibus luctus augue, sed imperdiet lectus finibus a."
+                ),
+                (0, _preact.h)(
+                    "p",
+                    null,
+                    "Praesent vitae euismod tortor. Nullam venenatis dolor ipsum, vel mollis odio rhoncus in. Donec tempor a dolor ac aliquam. Phasellus tempor convallis nibh quis porttitor. Mauris nisi elit, fringilla non feugiat vel, imperdiet at urna. Sed sodales at dui vitae porttitor. Integer placerat sagittis magna, ac varius lectus pretium vitae. Donec semper, purus eget malesuada condimentum, orci sapien ullamcorper elit, quis bibendum sapien sem eu tortor. Nullam nisl diam, bibendum id diam vulputate, iaculis tristique ex. Nunc malesuada, turpis quis hendrerit semper, magna nulla feugiat nisl, a luctus dolor nibh vel nisl. Praesent nec mollis diam. Suspendisse dignissim faucibus nulla eu feugiat. Pellentesque quis turpis id dolor consectetur malesuada."
+                ),
+                (0, _preact.h)(
+                    "p",
+                    null,
+                    "Nunc ac laoreet velit. Donec luctus volutpat risus non fermentum. Fusce blandit nec purus sed tristique. Curabitur venenatis hendrerit massa sit amet lacinia. Cras accumsan est eu nisi laoreet mollis. Etiam blandit tellus nisl, sit amet tincidunt nisi imperdiet a. Cras a commodo sapien, eget vulputate arcu. Nullam non tempus libero. Suspendisse nec varius ligula. Maecenas non felis et dui pharetra facilisis at ac tellus. Suspendisse vel velit at massa posuere condimentum. Nullam a ex nec sapien placerat varius. Proin nec enim nec sapien sagittis blandit non eget mi. Suspendisse feugiat lectus lectus, ut vestibulum ante sollicitudin in."
+                )
+            );
+        }
+    }]);
+
+    return Fightfit;
+}(_preact.Component);
+
+exports.default = Fightfit;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gym = function (_Component) {
+	_inherits(Gym, _Component);
+
+	function Gym() {
+		_classCallCheck(this, Gym);
+
+		return _possibleConstructorReturn(this, (Gym.__proto__ || Object.getPrototypeOf(Gym)).apply(this, arguments));
+	}
+
+	_createClass(Gym, [{
+		key: "render",
+		value: function render() {
+			return (0, _preact.h)(
+				"div",
+				{ id: "gym" },
+				(0, _preact.h)(
+					"h1",
+					{ className: "secondary-title" },
+					"Athletics Gym"
+				),
+				(0, _preact.h)(
+					"p",
+					null,
+					"Suspendisse tristique sit amet leo et consectetur. Integer ut elit nec augue lacinia viverra vel vitae ligula. Nam ullamcorper fermentum lorem sed ultrices. Praesent at arcu hendrerit, tincidunt eros id, posuere nisi. Suspendisse rutrum erat et aliquam dictum. In hac habitasse platea dictumst. Aenean eget iaculis nunc. Sed in faucibus ligula. Proin ac dolor suscipit, dignissim est in, dapibus ligula. Praesent libero neque, fermentum a vulputate at, pellentesque et libero. Fusce blandit, turpis a finibus eleifend, nulla felis ultrices ligula, in porttitor arcu nulla ut ipsum. Praesent auctor ex vitae massa lobortis, at maximus augue varius. Aliquam tincidunt, magna ornare sodales vehicula, sem purus interdum risus, at bibendum massa est a lectus."
+				)
+			);
+		}
+	}]);
+
+	return Gym;
+}(_preact.Component);
+
+exports.default = Gym;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Navbar = function (_Component) {
+    _inherits(Navbar, _Component);
+
+    function Navbar() {
+        _classCallCheck(this, Navbar);
+
+        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+    }
+
+    _createClass(Navbar, [{
+        key: "render",
+        value: function render() {
+            return (0, _preact.h)(
+                "nav",
+                { role: "navigation", id: "nav" },
+                (0, _preact.h)("input", { className: "trigger", type: "checkbox", id: "mainNavButton" }),
+                (0, _preact.h)(
+                    "label",
+                    { "for": "mainNavButton", onclick: true },
+                    (0, _preact.h)("img", { src: "src/images/favicon.png", className: "icon" })
+                ),
+                (0, _preact.h)(
+                    "ul",
+                    null,
+                    (0, _preact.h)(
+                        "li",
+                        { className: "nav-filler" },
+                        (0, _preact.h)("img", { src: "src/images/favicon.png", className: "icon" })
+                    ),
+                    (0, _preact.h)(
+                        "li",
+                        null,
+                        (0, _preact.h)(
+                            "a",
+                            { href: "#fightfit" },
+                            "FightFit"
+                        )
+                    ),
+                    (0, _preact.h)(
+                        "li",
+                        null,
+                        (0, _preact.h)(
+                            "a",
+                            { href: "#trainers" },
+                            "Instrukt\xF6rer"
+                        )
+                    ),
+                    (0, _preact.h)(
+                        "li",
+                        null,
+                        (0, _preact.h)(
+                            "a",
+                            { href: "#sessions" },
+                            "Pass"
+                        )
+                    ),
+                    (0, _preact.h)(
+                        "li",
+                        null,
+                        (0, _preact.h)(
+                            "a",
+                            { href: "#gym" },
+                            "Gym"
+                        )
+                    ),
+                    (0, _preact.h)(
+                        "li",
+                        null,
+                        (0, _preact.h)(
+                            "a",
+                            { href: "#about" },
+                            "Om oss"
+                        )
+                    ),
+                    (0, _preact.h)(
+                        "li",
+                        null,
+                        (0, _preact.h)(
+                            "a",
+                            { href: "#contact" },
+                            "Kontakt"
+                        )
+                    ),
+                    (0, _preact.h)("li", { className: "nav-filler-2" })
+                )
+            );
+        }
+    }]);
+
+    return Navbar;
+}(_preact.Component);
+
+exports.default = Navbar;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Sessions = function (_Component) {
+    _inherits(Sessions, _Component);
+
+    function Sessions() {
+        _classCallCheck(this, Sessions);
+
+        return _possibleConstructorReturn(this, (Sessions.__proto__ || Object.getPrototypeOf(Sessions)).apply(this, arguments));
+    }
+
+    _createClass(Sessions, [{
+        key: 'sessions',
+        value: function sessions() {
+            return [{ day: 'Måndag', sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }] }, {
+                day: 'Tisdag',
+                sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }, { time: '17.15 - 18.00', type: 'Reps' }, { time: '18.15 - 19.15', type: 'Kick and  box' }]
+            }, { day: 'Onsdag', sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }] }, {
+                day: 'Torsdag',
+                sessions: [{ time: '17.15 - 18.00', type: 'FightFit' }, { time: '18.15 - 19.00', type: 'Barbell Hell' }]
+            }, { day: 'Fredag', sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }] }, { day: 'Lördag', sessions: [{ time: '10.00 - 11.00', type: 'Kick and  box' }] }, { day: 'Söndag', sessions: [{ time: '10.00 - 10.45', type: 'Tabata' }] }];
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return (0, _preact.h)(
+                'div',
+                { id: 'sessions' },
+                (0, _preact.h)(
+                    'h1',
+                    { className: 'secondary-title' },
+                    'Pass'
+                ),
+                (0, _preact.h)(
+                    'div',
+                    { className: 'flex-container' },
+                    this.renderSchedules()
+                )
+            );
+        }
+    }, {
+        key: 'renderSchedules',
+        value: function renderSchedules() {
+            var _this2 = this;
+
+            return this.sessions().map(function (x) {
+                return _this2.renderDay(x);
+            });
+        }
+    }, {
+        key: 'renderDay',
+        value: function renderDay(data) {
+            var _this3 = this;
+
+            return (0, _preact.h)(
+                'div',
+                { className: 'session' },
+                (0, _preact.h)(
+                    'span',
+                    { className: 'sub-title' },
+                    data.day
+                ),
+                (0, _preact.h)(
+                    'table',
+                    null,
+                    (0, _preact.h)(
+                        'tbody',
+                        null,
+                        data.sessions.map(function (x) {
+                            return _this3.renderSession(x);
+                        })
+                    )
+                )
+            );
+        }
+    }, {
+        key: 'renderSession',
+        value: function renderSession(session) {
+            return (0, _preact.h)(
+                'tr',
+                null,
+                (0, _preact.h)(
+                    'td',
+                    null,
+                    (0, _preact.h)(
+                        'span',
+                        { style: 'margin-left: -3px;' },
+                        session.time
+                    )
+                ),
+                (0, _preact.h)(
+                    'td',
+                    null,
+                    (0, _preact.h)(
+                        'span',
+                        { style: 'margin-left: -3px; padding-left: 5px;' },
+                        session.type
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Sessions;
+}(_preact.Component);
+
+exports.default = Sessions;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _preact = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Trainers = function (_Component) {
+	_inherits(Trainers, _Component);
+
+	function Trainers() {
+		_classCallCheck(this, Trainers);
+
+		return _possibleConstructorReturn(this, (Trainers.__proto__ || Object.getPrototypeOf(Trainers)).apply(this, arguments));
+	}
+
+	_createClass(Trainers, [{
+		key: "render",
+		value: function render() {
+			return (0, _preact.h)(
+				"div",
+				{ id: "trainers" },
+				(0, _preact.h)(
+					"h1",
+					{ className: "secondary-title inline-block" },
+					"Instrukt\xF6rer"
+				),
+				(0, _preact.h)(
+					"div",
+					{ className: "tab-container rounded" },
+					(0, _preact.h)(
+						"div",
+						{ className: "tabs" },
+						(0, _preact.h)(
+							"div",
+							{ "class": "tab-3" },
+							(0, _preact.h)(
+								"label",
+								{ "for": "tab3-1", className: "sub-title" },
+								"Morgan"
+							),
+							" ",
+							(0, _preact.h)("input", { checked: true, id: "tab3-1", name: "tabs-two", type: "radio" }),
+							(0, _preact.h)(
+								"div",
+								null,
+								(0, _preact.h)("img", { src: "src/images/morgan_profile.jpg", alt: "Morgan", "class": "profile-picture" }),
+								(0, _preact.h)(
+									"h4",
+									null,
+									"Pass, gym, r\xE5dgivning"
+								),
+								(0, _preact.h)(
+									"p",
+									null,
+									"FightFit, Reps, Barbell hell, Core"
+								),
+								(0, _preact.h)(
+									"p",
+									null,
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+								)
+							)
+						),
+						(0, _preact.h)(
+							"div",
+							{ "class": "tab-3" },
+							(0, _preact.h)(
+								"label",
+								{ "for": "tab3-2", className: "sub-title" },
+								"Malin"
+							),
+							" ",
+							(0, _preact.h)("input", { id: "tab3-2", name: "tabs-two", type: "radio" }),
+							(0, _preact.h)(
+								"div",
+								null,
+								(0, _preact.h)("img", { src: "src/images/malin_profile.jpg", alt: "Morgan", "class": "profile-picture" }),
+								(0, _preact.h)(
+									"h4",
+									null,
+									"Pass, gym, r\xE5dgivning"
+								),
+								(0, _preact.h)(
+									"p",
+									null,
+									"FightFit, Core"
+								),
+								(0, _preact.h)(
+									"p",
+									null,
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+								)
+							)
+						),
+						(0, _preact.h)(
+							"div",
+							{ "class": "tab-3" },
+							(0, _preact.h)(
+								"label",
+								{ "for": "tab3-3", className: "sub-title" },
+								"Thord"
+							),
+							" ",
+							(0, _preact.h)("input", { id: "tab3-3", name: "tabs-two", type: "radio" }),
+							(0, _preact.h)(
+								"div",
+								null,
+								(0, _preact.h)("img", { src: "src/images/default_profile.jpg", alt: "Morgan", "class": "profile-picture" }),
+								(0, _preact.h)(
+									"h4",
+									null,
+									"Pass"
+								),
+								(0, _preact.h)(
+									"p",
+									null,
+									"FightFit"
+								),
+								(0, _preact.h)(
+									"p",
+									null,
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Trainers;
+}(_preact.Component);
+
+exports.default = Trainers;
 
 /***/ })
 /******/ ]);
