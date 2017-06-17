@@ -54,7 +54,7 @@ export default class Sessions extends Component {
     renderSession(session) {
         return <tr>
             <td><span style="margin-left: -3px;">{session.time}</span></td>
-            <td><span style="margin-left: -3px;">{session.type}</span></td>
+            <td><span style="margin-left: -3px; padding-left: 5px;">{session.type}</span></td>
         </tr>;
     }
 }

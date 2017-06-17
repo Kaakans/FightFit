@@ -15,7 +15,7 @@ export default class Contact extends Component {
                     <tbody>
                         <tr>
                             <td><i className="fa fa-facebook-official" /></td>
-                            <td>http://facebook.com/fightfitkristinehamn</td>
+                            <td><a href="http://facebook.com/fightfitkristinehamn">FightFit på facebook</a></td>
                         </tr>
                         <tr>
                             <td><i className="fa fa-phone" /></td>
@@ -23,7 +23,7 @@ export default class Contact extends Component {
                         </tr>
                         <tr>
                             <td><i className="fa fa-map-marker" /></td>
-                            <td>Tredje Industrigatan 2</td>
+                            <td>Tredje Industrigatan 2, Kristinehamn</td>
                         </tr>
                     </tbody>
                 </table>
