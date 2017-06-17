@@ -10,7 +10,7 @@ export default class Trainers extends Component {
 						<div class="tab-3">
 							<label for="tab3-1" className="sub-title">Morgan</label> <input checked={true} id="tab3-1" name="tabs-two" type="radio" />
 							<div>
-								<img src="../images/morgan_profile.jpg" alt="Morgan" class="profile-picture" />
+								<img src="src/images/morgan_profile.jpg" alt="Morgan" class="profile-picture" />
 								<h4>Pass, gym, rådgivning</h4>
 								<p>
 									FightFit, Reps, Barbell hell, Core
@@ -27,7 +27,7 @@ export default class Trainers extends Component {
 						<div class="tab-3">
 							<label for="tab3-2" className="sub-title">Malin</label> <input id="tab3-2" name="tabs-two" type="radio" />
 							<div>
-								<img src="../images/malin_profile.jpg" alt="Morgan" class="profile-picture" />
+								<img src="src/images/malin_profile.jpg" alt="Morgan" class="profile-picture" />
 								<h4>Pass, gym, rådgivning</h4>
 								<p>
 									FightFit, Core
@@ -44,7 +44,7 @@ export default class Trainers extends Component {
 						<div class="tab-3">
 							<label for="tab3-3" className="sub-title">Thord</label> <input id="tab3-3" name="tabs-two" type="radio" />
 							<div>
-								<img src="../images/default_profile.jpg" alt="Morgan" class="profile-picture" />
+								<img src="src/images/default_profile.jpg" alt="Morgan" class="profile-picture" />
 								<h4>Pass</h4>
 								<p>
 									FightFit

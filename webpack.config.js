@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	// entry file - starting point for the app
-	entry: './src',
+	entry: './',
 
 	// where to dump the output of a production build
 	output: {
@@ -51,7 +51,7 @@ module.exports = {
 
 	devServer: {
 		// serve up any static files from src/
-		contentBase: path.join(__dirname, 'src'),
+		contentBase: __dirname,
 
 		// enable gzip compression:
 		compress: true,

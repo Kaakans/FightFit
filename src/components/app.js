@@ -12,7 +12,7 @@ export default class App extends Component {
 		return (
 			<div className="app">
 				<Navbar />
-				<img src="../images/boxing.jpg" class="fit-screen-image"/>
+				<img src="src/images/boxing.jpg" class="fit-screen-image"/>
 				<Fightfit />
 				<Trainers />
 				<Sessions />
