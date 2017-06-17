@@ -602,6 +602,9 @@ p {
 #contact {
   padding: 30px 30px;
 }
+#sessions + div {
+  margin-top: -13px;
+}
 .secondary-title {
   font-size: 40px;
   line-height: 0.8em;
