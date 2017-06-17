@@ -633,15 +633,20 @@ p {
 }
 .flex-container .session {
   flex-grow: 1;
-  flex-basis: 170px;
-  max-width: 170px;
+  flex-basis: 160px;
+  max-width: 160px;
   display: inline-block;
-  margin: 5px 5px;
+  border: 1px solid black;
+  position: relative;
+  padding: 5px;
+  margin: 0 5px 13px 5px;
 }
 .flex-container .session .sub-title {
   padding-top: 0;
   padding-bottom: 5px;
-  text-decoration: underline;
+  top: -12px;
+  position: absolute;
+  background-color: white;
 }
 .flex-container .session table tbody tr td {
   white-space: nowrap;
