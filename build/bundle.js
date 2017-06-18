@@ -1104,13 +1104,19 @@ var Sessions = function (_Component) {
     _createClass(Sessions, [{
         key: 'sessions',
         value: function sessions() {
-            return [{ day: 'Måndag', sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }] }, {
+            return [{
+                day: 'Måndag',
+                sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }, { time: '17.15 - 18.00', type: 'FightFit' }, { time: '18.15 - 19.00', type: 'FightFit' }, { time: '19.15 - 20.00', type: 'FightFit' }]
+            }, {
                 day: 'Tisdag',
                 sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }, { time: '17.15 - 18.00', type: 'Reps' }, { time: '18.15 - 19.15', type: 'Kick and  box' }]
-            }, { day: 'Onsdag', sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }] }, {
+            }, {
+                day: 'Onsdag',
+                sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }, { time: '17.15 - 18.00', type: 'FightFit' }, { time: '18.15 - 19.00', type: 'FightFit' }, { time: '19.15 - 20.00', type: 'FightFit' }]
+            }, {
                 day: 'Torsdag',
-                sessions: [{ time: '17.15 - 18.00', type: 'FightFit' }, { time: '18.15 - 19.00', type: 'Barbell Hell' }]
-            }, { day: 'Fredag', sessions: [{ time: '16.15 - 17.00', type: 'FightFit' }] }, { day: 'Lördag', sessions: [{ time: '10.00 - 11.00', type: 'Kick and  box' }] }, { day: 'Söndag', sessions: [{ time: '10.00 - 10.45', type: 'Tabata' }] }];
+                sessions: [{ time: '16.15 - 17.00', type: 'Barbell Hell' }, { time: '17.15 - 18.00', type: 'Core' }, { time: '18.15 - 19.00', type: 'Barbell Hell' }]
+            }, { day: 'Fredag', sessions: [{ time: '16.15 - 17.00', type: 'Fredagsmys' }] }, { day: 'Lördag', sessions: [{ time: '10.00 - 11.00', type: 'Kick and  box' }] }, { day: 'Söndag', sessions: [{ time: '10.00 - 10.45', type: 'Tabata' }] }];
         }
     }, {
         key: 'render',
@@ -1127,6 +1133,17 @@ var Sessions = function (_Component) {
                     'div',
                     { className: 'flex-container' },
                     this.renderSchedules()
+                ),
+                (0, _preact.h)(
+                    'p',
+                    null,
+                    'Obs! Alla tider \xE4r prelimin\xE4ra. Faktiskt schema och tidsbokning sker via ',
+                    (0, _preact.h)(
+                        'a',
+                        { href: 'http://facebook.com/fightfitkristinehamn' },
+                        'Facebook'
+                    ),
+                    '.'
                 )
             );
         }
