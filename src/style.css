@@ -653,7 +653,7 @@ p {
 .flex-container .session table tbody tr td {
   white-space: nowrap;
 }
-@media (min-width: 44em) {
+@media (min-width: 40em) {
   .fit-screen-image {
     width: 100%;
   }
