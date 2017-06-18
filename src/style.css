@@ -603,7 +603,7 @@ p {
   padding: 30px 30px;
 }
 #sessions + div {
-  margin-top: -13px;
+  margin-top: -20px;
 }
 .secondary-title {
   font-size: 40px;
@@ -639,17 +639,16 @@ p {
   flex-basis: 160px;
   max-width: 160px;
   display: inline-block;
-  border: 1px solid black;
   position: relative;
   padding: 5px;
-  margin: 0 5px 13px 5px;
+  margin: 0 5px 20px 5px;
+  box-shadow: 0px 5px 15px #eee;
 }
 .flex-container .session .sub-title {
   padding-top: 0;
   padding-bottom: 5px;
   top: -12px;
   position: absolute;
-  background-color: white;
 }
 .flex-container .session table tbody tr td {
   white-space: nowrap;
