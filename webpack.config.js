@@ -25,26 +25,19 @@ module.exports = {
 					]
 				}
 			},
+			// {test: /\.css$/, use: 'css-loader'},
 			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-					use: "css-loader"
+				test: /\.less$/,
+				use: ExtractTextPlugin.extract({ 
+					fallback: 'style-loader',						
+					use: 'css-loader!less-loader'
 				})
 			},
-			// {
-			// 	test: /\.less$/,
-			// 	use: ExtractTextPlugin.extract({
-			// 		fallback: 'style-loader',
-			// 		use: ['css-loader', 'less-loader']
-			// 	})
-			// }
 		]
 	},
-
-	plugins: [
-		new ExtractTextPlugin('style.css')
-	],
+    plugins: [
+        new ExtractTextPlugin('styles.css'),
+    ],
 
 	// enable Source Maps
 	devtool: 'source-map',

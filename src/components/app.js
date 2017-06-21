@@ -7,6 +7,8 @@ import Gym from './gym';
 import About from './about';
 import Contact from './contact';
 
+require('../../less/main.less');
+
 export default class App extends Component {
 	render() {
 		return (
