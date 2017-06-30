@@ -15,15 +15,13 @@ export default class App extends Component {
 			<div className="app">
 				<Navbar />
 				<img src="src/images/boxing.jpg" class="fit-screen-image"/>
-				<div className="content-container">
-					<Fightfit />
-					<Trainers />
-					<Sessions />
-					<Gym />
-					<div className="tiny-info-container">
-						<About />
-						<Contact />
-					</div>
+				<Fightfit />
+				<Trainers />
+				<Sessions />
+				<Gym />
+				<div className="tiny-info-container">
+					<About />
+					<Contact />
 				</div>
 			</div>
 		);
