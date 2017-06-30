@@ -591,6 +591,10 @@ p {
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+.content-container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
 .fit-screen-image {
   height: 100vh;
 }
@@ -633,6 +637,7 @@ p {
   /* newer flexbox */
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
 }
 .flex-container .session {
   flex-grow: 1;

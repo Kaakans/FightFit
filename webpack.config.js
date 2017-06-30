@@ -1,6 +1,15 @@
 var path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+var babelOptions = {
+  	presets: [
+      "es2015"
+    ],
+	plugins: [
+		['transform-react-jsx', { pragma: 'h' }]
+	]
+};
+
 module.exports = {
 	// entry file - starting point for the app
 	entry: './',
@@ -14,18 +23,10 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.jsx?/i,
+				test: /\.js(x?)$/,
 				loader: 'babel-loader',
-				options: {
-					presets: [
-						'es2015'
-					],
-					plugins: [
-						['transform-react-jsx', { pragma: 'h' }]
-					]
-				}
+				options: babelOptions
 			},
-			// {test: /\.css$/, use: 'css-loader'},
 			{
 				test: /\.less$/,
 				use: ExtractTextPlugin.extract({ 
@@ -38,6 +39,9 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('styles.css'),
     ],
+	resolve: {
+		extensions: ['.ts', '.tsx', '.js']
+	},
 
 	// enable Source Maps
 	devtool: 'source-map',

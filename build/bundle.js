@@ -615,15 +615,19 @@ var App = function (_Component) {
 				{ className: 'app' },
 				(0, _preact.h)(_navbar2.default, null),
 				(0, _preact.h)('img', { src: 'src/images/boxing.jpg', 'class': 'fit-screen-image' }),
-				(0, _preact.h)(_fightfit2.default, null),
-				(0, _preact.h)(_trainers2.default, null),
-				(0, _preact.h)(_sessions2.default, null),
-				(0, _preact.h)(_gym2.default, null),
 				(0, _preact.h)(
 					'div',
-					{ className: 'tiny-info-container' },
-					(0, _preact.h)(_about2.default, null),
-					(0, _preact.h)(_contact2.default, null)
+					{ className: 'content-container' },
+					(0, _preact.h)(_fightfit2.default, null),
+					(0, _preact.h)(_trainers2.default, null),
+					(0, _preact.h)(_sessions2.default, null),
+					(0, _preact.h)(_gym2.default, null),
+					(0, _preact.h)(
+						'div',
+						{ className: 'tiny-info-container' },
+						(0, _preact.h)(_about2.default, null),
+						(0, _preact.h)(_contact2.default, null)
+					)
 				)
 			);
 		}
