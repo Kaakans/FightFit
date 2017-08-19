@@ -1052,7 +1052,7 @@ var Navbar = function (_Component) {
                 (0, _preact.h)(
                     "label",
                     { "for": "mainNavButton", onclick: true },
-                    (0, _preact.h)("img", { src: "src/images/test.svg", className: "icon" })
+                    (0, _preact.h)("img", { src: "src/images/FF_logo.svg", className: "icon" })
                 ),
                 (0, _preact.h)(
                     "ul",
@@ -1060,7 +1060,7 @@ var Navbar = function (_Component) {
                     (0, _preact.h)(
                         "li",
                         { className: "nav-filler" },
-                        (0, _preact.h)("img", { src: "src/images/test.svg", className: "icon" })
+                        (0, _preact.h)("img", { src: "src/images/FF_logo.svg", className: "icon" })
                     ),
                     (0, _preact.h)(
                         "li",
