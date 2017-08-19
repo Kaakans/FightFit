@@ -4,18 +4,20 @@ export default class Gym extends Component {
 	render() {
 		return (
 			<div id="gym">
-				<h1 className="secondary-title">Athletics Gym</h1>
-				<p>
-					Suspendisse tristique sit amet leo et consectetur. 
-					Integer ut elit nec augue lacinia viverra vel vitae ligula. 
-					Nam ullamcorper fermentum lorem sed ultrices. 
-					Praesent at arcu hendrerit, tincidunt eros id, posuere nisi. Suspendisse rutrum erat et aliquam dictum. 
-					In hac habitasse platea dictumst. Aenean eget iaculis nunc. Sed in faucibus ligula. 
-					Proin ac dolor suscipit, dignissim est in, dapibus ligula. Praesent libero neque, fermentum a vulputate at, pellentesque et libero. 
-					Fusce blandit, turpis a finibus eleifend, nulla felis ultrices ligula, in porttitor arcu nulla ut ipsum. 
-					Praesent auctor ex vitae massa lobortis, at maximus augue varius. 
-					Aliquam tincidunt, magna ornare sodales vehicula, sem purus interdum risus, at bibendum massa est a lectus.
-				</p>
+				<h1 className="secondary-title">Fight Fit Athletics - Kristinehamns nya toppgym</h1>
+				<p>En topputrustad träningsanläggning med över 700 kvadrat träningsyta. Vi har:</p>
+				<ul>
+					<li>28 konditionsmaskiner</li>
+					<li>Flertalet friviktsmaskiner</li>
+					<li>Maskiner med viktmagasin</li>
+					<li>Stort utbud av fria vikter. tunga hantlar och flertalet skivstänger</li>
+					<li>Riktiga tyngdlyftningsgolv</li>
+					<li>Powerracks</li>
+					<li>Crossfitriggar som är fullt utrustade</li>
+					<li>Stor yta konstgräs med över 20-talet funktionsredskap</li>
+					<li>Stor lokal för pass</li>
+					<li>Balkong för fika och mat</li>
+				</ul>
 			</div>
 		);
 	}

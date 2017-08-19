@@ -67,7 +67,8 @@
   color: #000000;
 }
 #nav label .icon {
-  height: 2em;
+  height: 100%;
+  background-color: white;
 }
 #nav label:after {
   position: absolute;
@@ -82,6 +83,7 @@
     margin-bottom: 50px;
   }
   #nav .icon {
+    height: 56px;
     display: inline-block;
     margin: auto auto;
     font-weight: 700;
@@ -619,6 +621,12 @@ p {
   line-height: 1em;
   letter-spacing: 0.02em;
   padding: 1.5rem 0;
+}
+#contact table tbody tr td {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 .flex-container {
   /* older flexbox */

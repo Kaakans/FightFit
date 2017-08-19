@@ -942,12 +942,66 @@ var Gym = function (_Component) {
 				(0, _preact.h)(
 					"h1",
 					{ className: "secondary-title" },
-					"Athletics Gym"
+					"Fight Fit Athletics - Kristinehamns nya toppgym"
 				),
 				(0, _preact.h)(
 					"p",
 					null,
-					"Suspendisse tristique sit amet leo et consectetur. Integer ut elit nec augue lacinia viverra vel vitae ligula. Nam ullamcorper fermentum lorem sed ultrices. Praesent at arcu hendrerit, tincidunt eros id, posuere nisi. Suspendisse rutrum erat et aliquam dictum. In hac habitasse platea dictumst. Aenean eget iaculis nunc. Sed in faucibus ligula. Proin ac dolor suscipit, dignissim est in, dapibus ligula. Praesent libero neque, fermentum a vulputate at, pellentesque et libero. Fusce blandit, turpis a finibus eleifend, nulla felis ultrices ligula, in porttitor arcu nulla ut ipsum. Praesent auctor ex vitae massa lobortis, at maximus augue varius. Aliquam tincidunt, magna ornare sodales vehicula, sem purus interdum risus, at bibendum massa est a lectus."
+					"En topputrustad tr\xE4ningsanl\xE4ggning med \xF6ver 700 kvadrat tr\xE4ningsyta. Vi har:"
+				),
+				(0, _preact.h)(
+					"ul",
+					null,
+					(0, _preact.h)(
+						"li",
+						null,
+						"28 konditionsmaskiner"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Flertalet friviktsmaskiner"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Maskiner med viktmagasin"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Stort utbud av fria vikter. tunga hantlar och flertalet skivst\xE4nger"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Riktiga tyngdlyftningsgolv"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Powerracks"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Crossfitriggar som \xE4r fullt utrustade"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Stor yta konstgr\xE4s med \xF6ver 20-talet funktionsredskap"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Stor lokal f\xF6r pass"
+					),
+					(0, _preact.h)(
+						"li",
+						null,
+						"Balkong f\xF6r fika och mat"
+					)
 				)
 			);
 		}
@@ -998,7 +1052,7 @@ var Navbar = function (_Component) {
                 (0, _preact.h)(
                     "label",
                     { "for": "mainNavButton", onclick: true },
-                    (0, _preact.h)("img", { src: "src/images/favicon.png", className: "icon" })
+                    (0, _preact.h)("img", { src: "src/images/test.svg", className: "icon" })
                 ),
                 (0, _preact.h)(
                     "ul",
@@ -1006,7 +1060,7 @@ var Navbar = function (_Component) {
                     (0, _preact.h)(
                         "li",
                         { className: "nav-filler" },
-                        (0, _preact.h)("img", { src: "src/images/favicon.png", className: "icon" })
+                        (0, _preact.h)("img", { src: "src/images/test.svg", className: "icon" })
                     ),
                     (0, _preact.h)(
                         "li",

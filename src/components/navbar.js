@@ -6,11 +6,11 @@ export default class Navbar extends Component {
             <nav role="navigation" id="nav">
                 <input className="trigger" type="checkbox" id="mainNavButton" />
                 <label for="mainNavButton" onclick>
-                    <img src="src/images/favicon.png" className="icon" />
+                    <img src="src/images/FF_logo.svg" className="icon" />
                 </label>
                 <ul>
                     <li className="nav-filler">
-                        <img src="src/images/favicon.png" className="icon" />
+                        <img src="src/images/FF_logo.svg" className="icon" />
                     </li>
                     <li><a href="#fightfit">FightFit</a></li>
                     <li><a href="#trainers">Instruktörer</a></li>
