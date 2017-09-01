@@ -27,6 +27,7 @@
   padding: 1em;
   color: #ccc;
   text-decoration: none;
+  font-family: 'ContenderBold';
 }
 #nav ul li a:hover {
   color: #eee;
@@ -127,6 +128,7 @@
     flex: 4;
   }
   #nav ul li {
+    padding-top: 10px;
     position: relative;
     text-align: center;
     /* older flexbox */
@@ -142,6 +144,7 @@
     padding: 1em;
     color: #ccc;
     text-decoration: none;
+    font-family: 'ContenderBold';
   }
   #nav ul li ul {
     display: none !important;
@@ -583,7 +586,7 @@ div.mb-50 {
 /** Body **/
 /**********/
 body {
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
   margin: 0;
   animation: bugfix infinite 1s;
 }
@@ -608,6 +611,7 @@ p {
   margin-top: -20px;
 }
 .secondary-title {
+  font-family: 'ContenderBold';
   font-size: 40px;
   line-height: 0.8em;
   margin-top: 0;
@@ -694,6 +698,16 @@ p {
   .tiny-info-container #contact {
     float: right;
   }
+}
+/*** Fonts ***/
+/*************/
+@font-face {
+  font-family: 'Contender';
+  src: url(fonts/contender.woff2) format('woff2'), url(fonts/contender.woff) format('woff'), url(fonts/contender.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ContenderBold';
+  src: url(fonts/contender_bold.woff2) format('woff2'), url(fonts/contender.woff) format('woff'), url(fonts/contender.ttf) format('truetype');
 }
 
 /*# sourceMappingURL=styles.css.map*/

@@ -942,7 +942,7 @@ var Gym = function (_Component) {
 				(0, _preact.h)(
 					"h1",
 					{ className: "secondary-title" },
-					"Fight Fit Athletics - Kristinehamns nya toppgym"
+					"Fight Fit Athletics"
 				),
 				(0, _preact.h)(
 					"p",

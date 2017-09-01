@@ -4,7 +4,7 @@ export default class Gym extends Component {
 	render() {
 		return (
 			<div id="gym">
-				<h1 className="secondary-title">Fight Fit Athletics - Kristinehamns nya toppgym</h1>
+				<h1 className="secondary-title">Fight Fit Athletics</h1>
 				<p>En topputrustad träningsanläggning med över 700 kvadrat träningsyta. Vi har:</p>
 				<ul>
 					<li>28 konditionsmaskiner</li>

@@ -34,6 +34,10 @@ module.exports = {
 					use: 'css-loader!less-loader'
 				})
 			},
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=fonts/[name].[ext]'
+            }
 		]
 	},
     plugins: [
