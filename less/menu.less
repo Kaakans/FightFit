@@ -30,11 +30,11 @@
                 color: @grey-text;
                 text-decoration: none;
                 font-family: 'ContenderBold';
-            }
 
-            a:hover {
-                color: #eee;
-                font-weight: 500;
+                &:hover {
+                    color: @grey-text-hover;
+                    font-weight: 500;
+                }
             }
 
             ul {
@@ -80,18 +80,17 @@
     label {
         position: relative;
         display: block;
-        min-height: 2em;
+        width: 100%;
+        max-height: 2em;
         padding: .45em;
         font-size: 1.1em;
         margin: 0;
         cursor: pointer;
-        background: @primary;
         line-height: 2em;
-        color: @primary-text-color;
+        color: @grey-text;;
 
         .icon {
-            height: 100%;
-            background-color: white;
+            max-height: 2em;
         }
     }
 
@@ -101,11 +100,10 @@
         top: 0.2em;
         content: "\2261";
         font-size: 1.8em;
-        color: @primary-text-color;
     }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 40em) {
     #nav {
         margin-bottom: 50px;
 

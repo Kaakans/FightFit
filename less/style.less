@@ -28,22 +28,13 @@
     color: @secondary-text-color;
 }
 
-.secondary-light {
-    background-color: @secondary-light;
-    color: @secondary-text-color;
-}
-
 .secondary-dark {
-    background-color: @secondary-light;
+    background-color: @secondary-dark;
     color: @secondary-text-color;
 }
 
 .secondary-text {
     color: @secondary;
-}
-
-.secondary-light-text {
-    color: @secondary-light;
 }
 
 .secondary-dark-text {
@@ -98,6 +89,7 @@ body {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 	margin: 0;
     animation: bugfix infinite 1s;
+    background-color: @body-background;
 }
 
 p {
@@ -170,7 +162,7 @@ p {
         position: relative;
         padding: 5px;
         margin: 0 5px 20px 5px;
-        box-shadow: 0px 5px 15px #eee;
+        box-shadow: 0px 5px 15px #ccc;
 
         .sub-title {
             padding-top: 0;
@@ -200,7 +192,8 @@ p {
     .tiny-info-container {
         position: relative;
         content: "";
-        display: table;
+        display: flex;
+        justify-content: center;
         clear: both;
 
         #about, #contact {
@@ -210,11 +203,10 @@ p {
         }
 
         #about {
-            float: left;
-        }
-
-        #contact {
-            float: right;
+            h1, p {
+                float: right;
+                text-align: right;
+            }
         }
     }
 }

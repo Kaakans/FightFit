@@ -58,18 +58,17 @@
 #nav label {
   position: relative;
   display: block;
-  min-height: 2em;
+  width: 100%;
+  max-height: 2em;
   padding: .45em;
   font-size: 1.1em;
   margin: 0;
   cursor: pointer;
-  background: #bdbdbd;
   line-height: 2em;
-  color: #000000;
+  color: #ccc;
 }
 #nav label .icon {
-  height: 100%;
-  background-color: white;
+  max-height: 2em;
 }
 #nav label:after {
   position: absolute;
@@ -77,9 +76,8 @@
   top: 0.2em;
   content: "\2261";
   font-size: 1.8em;
-  color: #000000;
 }
-@media (min-width: 50em) {
+@media (min-width: 40em) {
   #nav {
     margin-bottom: 50px;
   }
@@ -459,11 +457,11 @@ select:focus {
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #e4202a;
+  border-bottom: 1px solid #d2140a;
 }
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 2px solid #e4202a;
+  border-bottom: 2px solid #d2140a;
 }
 .tabs [class^="tab"] [type="radio"]:checked + div,
 .tabs [class*=" tab"] [type="radio"]:checked + div {
@@ -535,25 +533,18 @@ select:focus {
   color: #000000;
 }
 .secondary {
-  background-color: #e4202a;
-  color: #ffffff;
-}
-.secondary-light {
-  background-color: #ff6659;
+  background-color: #d2140a;
   color: #ffffff;
 }
 .secondary-dark {
-  background-color: #ff6659;
+  background-color: #851914;
   color: #ffffff;
 }
 .secondary-text {
-  color: #e4202a;
-}
-.secondary-light-text {
-  color: #ff6659;
+  color: #d2140a;
 }
 .secondary-dark-text {
-  color: #9a0007;
+  color: #851914;
 }
 /** Helpers **/
 /*************/
@@ -589,6 +580,7 @@ body {
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   margin: 0;
   animation: bugfix infinite 1s;
+  background-color: #eee;
 }
 p {
   font-size: 14px;
@@ -616,7 +608,7 @@ p {
   line-height: 0.8em;
   margin-top: 0;
   margin-bottom: 30px;
-  color: #e4202a;
+  color: #d2140a;
 }
 .sub-title {
   display: block;
@@ -655,7 +647,7 @@ p {
   position: relative;
   padding: 5px;
   margin: 0 5px 20px 5px;
-  box-shadow: 0px 5px 15px #eee;
+  box-shadow: 0px 5px 15px #ccc;
 }
 .flex-container .session .sub-title {
   padding-top: 0;
@@ -683,7 +675,8 @@ p {
   .tiny-info-container {
     position: relative;
     content: "";
-    display: table;
+    display: flex;
+    justify-content: center;
     clear: both;
   }
   .tiny-info-container #about,
@@ -692,11 +685,10 @@ p {
     width: 40%;
     padding: 30px 0;
   }
-  .tiny-info-container #about {
-    float: left;
-  }
-  .tiny-info-container #contact {
+  .tiny-info-container #about h1,
+  .tiny-info-container #about p {
     float: right;
+    text-align: right;
   }
 }
 /*** Fonts ***/
