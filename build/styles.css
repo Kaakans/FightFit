@@ -582,13 +582,15 @@ body {
   animation: bugfix infinite 1s;
   background-color: #eee;
 }
+p {
+  margin-top: 0;
+}
 p,
 li,
 td {
   font-size: 14px;
   line-height: 1.8;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 .fit-screen-image {
   height: 100vh;
@@ -675,11 +677,8 @@ td {
     max-width: 1030px;
   }
   .tiny-info-container {
-    position: relative;
-    content: "";
     display: flex;
     justify-content: center;
-    clear: both;
   }
   .tiny-info-container #about,
   .tiny-info-container #contact {

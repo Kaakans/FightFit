@@ -92,11 +92,14 @@ body {
     background-color: @body-background;
 }
 
+p {
+    margin-top: 0;
+}
+
 p, li, td {
     font-size: 14px;
     line-height: 1.8;
-    font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
 }
 
 .fit-screen-image {
@@ -190,11 +193,8 @@ p, li, td {
     }
 
     .tiny-info-container {
-        position: relative;
-        content: "";
         display: flex;
         justify-content: center;
-        clear: both;
 
         #about, #contact {
             display: inline-block;
