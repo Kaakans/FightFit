@@ -628,6 +628,10 @@ td {
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+#contact .icon-wrapper {
+  width: 40px;
+  padding-right: 10px;
+}
 .flex-container {
   /* older flexbox */
   display: -ms-flexbox;
@@ -645,8 +649,9 @@ td {
 }
 .flex-container .session {
   flex-grow: 1;
-  flex-basis: 160px;
-  min-width: 160px;
+  flex-basis: max-content;
+  min-width: 256px;
+  max-width: 512px;
   display: inline-block;
   position: relative;
   padding: 5px;
