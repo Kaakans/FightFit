@@ -1272,16 +1272,6 @@ var Contact = function (_Component) {
                     "table",
                     null,
                     (0, _preact.h)(
-                        "thead",
-                        null,
-                        (0, _preact.h)(
-                            "tr",
-                            null,
-                            (0, _preact.h)("th", { width: "40" }),
-                            (0, _preact.h)("th", null)
-                        )
-                    ),
-                    (0, _preact.h)(
                         "tbody",
                         null,
                         (0, _preact.h)(
@@ -1289,7 +1279,7 @@ var Contact = function (_Component) {
                             null,
                             (0, _preact.h)(
                                 "td",
-                                null,
+                                { width: "40" },
                                 (0, _preact.h)("i", { className: "fa fa-facebook-official" })
                             ),
                             (0, _preact.h)(
@@ -1307,7 +1297,7 @@ var Contact = function (_Component) {
                             null,
                             (0, _preact.h)(
                                 "td",
-                                null,
+                                { width: "40" },
                                 (0, _preact.h)("i", { className: "fa fa-phone" })
                             ),
                             (0, _preact.h)(
@@ -1321,7 +1311,7 @@ var Contact = function (_Component) {
                             null,
                             (0, _preact.h)(
                                 "td",
-                                null,
+                                { width: "40" },
                                 (0, _preact.h)("i", { className: "fa fa-map-marker" })
                             ),
                             (0, _preact.h)(

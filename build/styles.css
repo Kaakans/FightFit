@@ -582,7 +582,9 @@ body {
   animation: bugfix infinite 1s;
   background-color: #eee;
 }
-p {
+p,
+li,
+td {
   font-size: 14px;
   line-height: 1.8;
   font-weight: 400;
